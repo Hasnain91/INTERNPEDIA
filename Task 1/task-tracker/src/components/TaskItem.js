@@ -25,6 +25,7 @@ function TaskItem({ task, deleteTask, toggleTaskCompletion, updateTask }) {
         />
         {isEditing ? (
           <input
+            className="editing"
             type="text"
             value={updatedText}
             onChange={(e) => setUpdatedText(e.target.value)}
